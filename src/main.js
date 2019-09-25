@@ -1,4 +1,15 @@
-import {soma, sub} from './functions'
+import axios from 'axios'
 
-console.log(soma(3,2))
-console.log(sub(5,3))
+class Api {
+    static async getUserInfo(username){
+        try {
+            const response = await axios.get(`https://api.github.com/users/${username}`)
+            console.log(response)
+        }
+        catch(err){
+            console.warn('Erro na requisição')
+        }
+    }
+}
+
+Api.getUserInfo('renanmerces')
