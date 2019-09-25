@@ -5,8 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ES6</title>
+
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            clear: both;
+            margin-top: 20px;
+        }
+        img {
+            float: left;
+            margin-right: 10px;
+            width: 80px;
+        }
+    </style>
 </head>
 <body>
+    <form id="form-repos">
+        <input type="text" name="repos">
+        <button type="submit">Adicionar</button>        
+    </form>
+
+    <ul id="list-repos"></ul>
+
     <script src="./bundle.js"></script>
 </body>
 </html>
